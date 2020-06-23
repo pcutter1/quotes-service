@@ -32,4 +32,5 @@ build/
 
 
 derby.log
+derby 2.log
 quotes_db
