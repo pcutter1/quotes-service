@@ -8,4 +8,6 @@ public interface QuoteRepository extends JpaRepository<Quote, Long> {
 
   Iterable<Quote> getAllByOrderByTextAsc();
 
+  Iterable<Quote> getAllBySourceOrderByTextAsc(Source source);
+
 }
