@@ -106,6 +106,10 @@ public class Quote implements FlatQuote {
     this.text = text;
   }
 
+  public void setContributor(User contributor) {
+    this.contributor = contributor;
+  }
+
   public Source getSource() {
     return source;
   }
