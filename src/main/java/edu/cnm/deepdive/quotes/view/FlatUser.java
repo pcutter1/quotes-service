@@ -1,12 +1,12 @@
 package edu.cnm.deepdive.quotes.view;
 
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import edu.cnm.deepdive.quotes.model.entity.User.Role;
 import java.net.URI;
 import java.util.Date;
-import org.springframework.lang.NonNull;
 
-@JsonPropertyOrder({"id", "created", "updated", "name", "href"})
-public interface FlatTag {
+@JsonPropertyOrder({"id", "created", "updated", "displayName", "role", "href"})
+public interface FlatUser {
 
   Long getId();
 
@@ -14,8 +14,9 @@ public interface FlatTag {
 
   Date getUpdated();
 
-  @NonNull
-  String getName();
+  String getDisplayName();
+
+  Role getRole();
 
   URI getHref();
 }
